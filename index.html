@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etch-A-Sketch</title>
+
+    <style>
+        #container {
+            height: 500px;
+            width: 500px;
+            border: 1px solid black;
+            display: flex;
+            flex-wrap: wrap;
+
+        }
+
+        .buttons {
+            padding: 4px;
+            margin: 6px 3px;
+        }
+    </style>
+</head>
+
+<body>
+    <p>Enter no of squares you want:
+        <input type="number" id="user_input">
+        <button id="submit">Submit</button>
+    </p>
+    <div id="container"></div>
+    <div>
+        <button class="buttons" id="clear">Clear</button>
+        <button class="buttons" id="erase">Erase</button>
+        <button class="buttons" id="random">Randomize color</button>
+        <button class="buttons" id="rgb">RGB</button>
+        <button class="buttons" id="opacity">Opacity</button>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
